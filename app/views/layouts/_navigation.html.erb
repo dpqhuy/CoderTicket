@@ -1,0 +1,23 @@
+<ul class="nav navbar-nav">
+<% if current_user %>
+  <li class="nav-item">
+    <%= link_to "Sign Out #{current_user.email}", logout_path, class: 'nav-link bold' %>
+  </li>
+  <li class="nav-item float-xs-right">
+    <%= link_to "My Events", mine_events_path, class: 'nav-link' %>
+  </li>
+  <li class="nav-item float-xs-right">
+    <%= link_to "Create Event", new_event_path, class: 'nav-link' %>
+  </li>
+  <li class="nav-item float-xs-right">
+    <%= link_to "Create Venue", new_venue_path, class: 'nav-link' %>
+  </li>
+<% else %>
+  <li class="nav-item">
+    <%= link_to "Sign up", new_user_path, class: 'nav-link', data: {:toggle => 'modal', :target => '#sign-up-modal'} %>
+  </li>
+  <li class="nav-item">
+    <%= link_to "Sign In", login_path, class: 'nav-link', data: {:toggle => 'modal', :target => '#sign-in-modal'}%>
+  </li>
+<% end %>
+</ul>

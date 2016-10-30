@@ -8,19 +8,76 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
-    <a class="navbar-brand" href="<%= root_path %>">Coder Ticket</a>
-    <ul class="nav navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Log In</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Sign Up</a>
-      </li>
-    </ul>
-  </nav>  
 
+  <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="<%= root_path %>">Coder Ticket</a>
+      </div>
+      <%= render partial: 'layouts/navigation' %>
+    </div>
+  </nav>  
 <%= yield %>
+
+<div class="modal fade" id="sign-up-modal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sign Up</h4>
+        </div>
+        <div class="modal-body">
+        <div class="flash-modal"></div>
+        <%= form_for(User.new, :remote => true) do |f| %>
+          <div class="form-group">
+            <%= f.text_field 'email', class: 'form-control', placeholder: 'Your E-mail' %>
+          </div>
+          <div class="form-group">
+            <%= f.text_field 'name', class: 'form-control', placeholder: 'Your Name' %>
+          </div>
+          <div class="form-group">
+            <%= f.password_field 'password', class: 'form-control', placeholder: 'Password' %>
+          </div>
+          <div class="form-group">
+            <%= f.password_field 'password_confirmation', class: 'form-control', placeholder: 'Password Confirmation' %>
+          </div>
+          <div class="form-group">
+            <%= f.submit 'Sign Up', class: 'btn btn-block btn-info' %>
+          </div>
+        <% end %>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="modal fade" id="sign-in-modal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sign In</h4>
+        </div>
+        <div class="modal-body">
+        <div class="flash-modal"></div>
+        <%= form_tag(sessions_path, :remote => true, :method => 'post') do %>
+          <div class="form-group">
+            <%= text_field_tag 'email', nil, class: 'form-control', placeholder: 'Email' %>
+          </div>
+          <div class="form-group">
+              <%= password_field_tag 'password', nil, class: 'form-control', placeholder: 'Password' %>
+          </div>
+          <div class="form-group">
+            <%= submit_tag 'Sign In', class: 'btn btn-block btn-info' %>
+          </div>
+        <% end %>
+        </div>
+      </div>
+    </div>
+</div>
 
 </body>
 </html>

@@ -1,0 +1,74 @@
+<div class="create-event-form">
+	<%= form_for(@event) do |f| %>
+      <div class="form-group row">
+        <%= f.label 'name', class: 'col-xs-2 col-form-label' %>
+        <div class="col-xs-10">
+          <%= f.text_field 'name', class: 'form-control' %>
+        </div>
+      </div>
+      <div class="form-group row">
+        <%= f.label 'extended_html_description', class: 'col-xs-2 col-form-label' %>
+        <div class="col-xs-10">
+          <%= f.text_field 'extended_html_description', class: 'form-control' %>
+        </div>
+      </div>
+      <div class="form-group row">
+        <%= f.label 'hero_image_url', class: 'col-xs-2 col-form-label' %>
+        <div class="col-xs-10">
+          <%= f.text_field 'hero_image_url', class: 'form-control' %>
+        </div>
+      </div>
+      <div class="form-group row">
+        <%= f.label 'starts_at', class: 'col-xs-2 col-form-label' %>
+        <div class="col-xs-10">
+          <%= f.text_field 'starts_at', class: 'form-control datepicker' %>
+        </div>
+      </div>
+      <div class="form-group row">
+        <%= f.label 'ends_at', class: 'col-xs-2 col-form-label' %>
+        <div class="col-xs-10">
+          <%= f.text_field 'ends_at', class: 'form-control datepicker' %>
+        </div>
+      </div>
+      <div class="form-group row">
+        <%= f.label 'category_id', class: 'col-xs-2 col-form-label' %>
+        <div class="col-xs-10">
+          <%= f.select 'category_id', categories.collect { |c| [ c.name, c.id ] }, class: 'form-control' %>
+        </div>
+      </div>
+      <div class="form-group row">
+        <%= f.label 'venue_id', class: 'col-xs-2 col-form-label' %>
+        <div class="col-xs-10">
+          <%= f.select 'venue_id', venues.collect { |v| [ v.name, v.id ] }, class: 'form-control' %>
+        </div>
+      </div>
+      <% if !@event.ticket_types.empty? %>
+      <div class="form-group row">
+        <div class="col-md-11 col-md-offset-1">  
+          <table class="table">
+            <th> Ticket Type </th>
+            <th> Unit Price </th>
+            <th> Max Quantity </th>
+          
+            <% @event.ticket_types.each do |type| %>
+            <tr>
+              <td> <%= type.name %> </td>
+              <td> <%= number_to_currency(type.price, unit: 'VND ', precision: 0) %> </td>
+              <td> <%= type.max_quantity %></td> 
+            </tr>
+            <% end %> 
+          </table>
+        </div>
+      </div>
+      <% end %>
+      <div class="form-group row">
+        <div class="col-md-11 col-md-offset-1">
+        <%= link_to "Add Ticket type", new_event_ticket_type_path(@event.id), class: "btn btn-success" %>
+        </div>
+      </div> 
+
+    	<div class="form-group row">
+  		<%= f.submit 'Submit', class: 'btn btn-block btn-info' %>
+      </div>
+	<% end %>
+</div>

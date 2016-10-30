@@ -1,80 +1,80 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/spec/routes/events_spec.rb": [
+      "C:/Sites/CoderTicket/spec/controllers/ticket_types_controller_spec.rb": [
         1,
         null,
         1,
-        1,
-        null
-      ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/spec/rails_helper.rb": [
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/environment.rb": [
+      "C:/Sites/CoderTicket/spec/rails_helper.rb": [
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "C:/Sites/CoderTicket/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/application.rb": [
+      "C:/Sites/CoderTicket/config/application.rb": [
         1,
         null,
         1,
@@ -98,11 +98,11 @@
         null,
         null,
         null,
-        1,
+        null,
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/boot.rb": [
+      "C:/Sites/CoderTicket/config/boot.rb": [
         1,
         null,
         1,
@@ -118,7 +118,7 @@
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/environments/test.rb": [
+      "C:/Sites/CoderTicket/config/environments/test.rb": [
         1,
         null,
         null,
@@ -162,7 +162,7 @@
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/initializers/assets.rb": [
+      "C:/Sites/CoderTicket/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -175,7 +175,7 @@
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/initializers/backtrace_silencers.rb": [
+      "C:/Sites/CoderTicket/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -184,18 +184,18 @@
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/initializers/cookies_serializer.rb": [
+      "C:/Sites/CoderTicket/config/initializers/cookies_serializer.rb": [
         null,
         null,
         1
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/initializers/filter_parameter_logging.rb": [
+      "C:/Sites/CoderTicket/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/initializers/inflections.rb": [
+      "C:/Sites/CoderTicket/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -213,18 +213,18 @@
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/initializers/mime_types.rb": [
+      "C:/Sites/CoderTicket/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/initializers/session_store.rb": [
+      "C:/Sites/CoderTicket/config/initializers/session_store.rb": [
         null,
         null,
         1
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/initializers/simple_form.rb": [
+      "C:/Sites/CoderTicket/config/initializers/simple_form.rb": [
         null,
         1,
         null,
@@ -391,7 +391,7 @@
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/initializers/simple_form_bootstrap.rb": [
+      "C:/Sites/CoderTicket/config/initializers/simple_form_bootstrap.rb": [
         null,
         1,
         1,
@@ -542,7 +542,7 @@
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/initializers/wrap_parameters.rb": [
+      "C:/Sites/CoderTicket/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -558,13 +558,101 @@
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/routes.rb": [
+      "C:/Sites/CoderTicket/spec/factories/categories.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "C:/Sites/CoderTicket/spec/factories/events.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "C:/Sites/CoderTicket/spec/factories/orders.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "C:/Sites/CoderTicket/spec/factories/regions.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "C:/Sites/CoderTicket/spec/factories/ticket_items.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "C:/Sites/CoderTicket/spec/factories/ticket_types.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "C:/Sites/CoderTicket/spec/factories/users.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "C:/Sites/CoderTicket/spec/factories/venues.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "C:/Sites/CoderTicket/config/routes.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
         1,
         1,
         null,
         1,
         1,
         null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
         null,
         null,
         null,
@@ -621,22 +709,115 @@
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/app/helpers/application_helper.rb": [
+      "C:/Sites/CoderTicket/app/helpers/application_helper.rb": [
         1,
+        1,
+        0,
+        null,
+        null,
+        1,
+        null,
+        0,
+        0,
+        null,
+        0,
+        null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/app/helpers/events_helper.rb": [
+      "C:/Sites/CoderTicket/app/helpers/events_helper.rb": [
         1,
         1,
         0,
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/app/helpers/tickets_helper.rb": [
+      "C:/Sites/CoderTicket/app/helpers/ticket_types_helper.rb": [
         1,
+        null
+      ],
+      "C:/Sites/CoderTicket/app/helpers/tickets_helper.rb": [
+        1,
+        null
+      ],
+      "C:/Sites/CoderTicket/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
+      "C:/Sites/CoderTicket/app/helpers/venues_helper.rb": [
+        1,
+        null
+      ],
+      "C:/Sites/CoderTicket/app/controllers/ticket_types_controller.rb": [
+        1,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null
+      ],
+      "C:/Sites/CoderTicket/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
         null
       ]
     },
-    "timestamp": 1477632197
+    "timestamp": 1477820060
   }
 }

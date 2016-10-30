@@ -1,0 +1,6 @@
+<% if flash[:error] %>
+	$("#sign-in-modal .flash-modal").html("<%= escape_javascript(flash_messages) %>")
+<% else %>
+	$('#sign-in-modal').modal('hide')
+	$(".nav.navbar-nav").html("<%= escape_javascript(render partial: 'layouts/navigation')%>")
+<% end %>

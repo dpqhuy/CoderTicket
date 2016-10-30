@@ -1,9 +1,28 @@
 Rails.application.routes.draw do
+  get 'venues/create'
+
+  get 'users/create'
+
   root 'events#index'
 
   resources :events do
+    collection do
+      get 'mine'
+    end
+    member do
+      post 'publish'
+    end
     resources :tickets
+    resources :ticket_types
   end
+  resources :ticket_types
+  resources :sessions
+  resources :users
+  resources :venues
+  get 'login' => 'sessions#new'
+  get 'logout' => 'sessions#destroy'
+
+  get '/upcoming' => 'events#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

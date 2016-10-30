@@ -1,0 +1,7 @@
+<div class='events-header' style='background-image: url(<%= header_background_image_url %>)'>
+</div>
+<div class="container-fluid events-list">
+	<%= flash_messages %>
+    <%= render "list", events: @events, mine: true %>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="create-event-form">
+	<%= form_for(TicketType.new) do |f| %>
+    <%= f.hidden_field 'event_id', :value => @event.id %>
+      <div class="form-group row">
+        <%= f.label 'name', class: 'col-xs-2 col-form-label' %>
+        <div class="col-xs-10">
+          <%= f.text_field 'name', class: 'form-control' %>
+        </div>
+      </div>
+      <div class="form-group row">
+        <%= f.label 'price', class: 'col-xs-2 col-form-label' %>
+        <div class="col-xs-10">
+          <%= f.number_field 'price', class: 'form-control' %>
+        </div>
+      </div>
+      <div class="form-group row">
+        <%= f.label 'max_quantity', class: 'col-xs-2 col-form-label' %>
+        <div class="col-xs-10">
+          <%= f.number_field 'max_quantity', class: 'form-control' %>
+        </div>
+      </div>
+    	<div class="form-group row">
+  		<%= f.submit 'Submit', class: 'btn btn-block btn-info' %>
+      </div>
+	<% end %>
+</div>

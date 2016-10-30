@@ -1,12 +1,30 @@
 <div class="col-md-6">
-  <%= link_to event_path(event) do %>
+  <% if is_mine %>
     <div class="card">
       <img class="card-img-top" src="<%= event.hero_image_url %>">
       <div class="card-block">
         <h4 class="card-title"><%= event.name %></h4>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
         </p>
+        <%= link_to "Edit", edit_event_path(event.id), class: "btn btn-primary" %> 
+        <% unless event.published? %>
+          <%= link_to "Publish", publish_event_path(event.id), method: :post, class: "btn btn-primary" %> 
+        <% else %>
+          <a href="#" class="btn btn-primary disabled">Published</a>
+        <% end %>
       </div>
     </div>
+  <% else %>
+    <%= link_to event_path(event) do %>
+      <div class="card">
+        <img class="card-img-top" src="<%= event.hero_image_url %>">
+        <div class="card-block">
+          <h4 class="card-title"><%= event.name %></h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+          </p>
+        </div>
+      </div>
+    <% end %>
   <% end %>
+  
 </div>  

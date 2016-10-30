@@ -1,0 +1,7 @@
+<% events.in_groups_of(3) do |g| %>
+	  <div class="row">
+	    <% g.compact.each do |e| %>
+	        <%= render partial: 'card', locals: {event: e, is_mine: mine} %>
+	    <% end %>
+	  </div>  
+<% end %>
