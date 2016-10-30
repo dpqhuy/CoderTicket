@@ -14,12 +14,12 @@ Rails.application.routes.draw do
     end
     resources :tickets
     resources :ticket_types
+    resources :orders
   end
   resources :ticket_types
   resources :sessions
   resources :users
   resources :venues
-  resources :orders
   get 'login' => 'sessions#new'
   get 'logout' => 'sessions#destroy'
 

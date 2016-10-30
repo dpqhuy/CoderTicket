@@ -21,12 +21,14 @@
 
     </div>
   </div>
+  <%= flash_messages %>
   
-  <%= form_for(Order.new) do |f| %>
+  <%= form_for Order.new, :url => event_orders_path, :method => :post do |f| %>
     <div class="row">
     <div class="col-md-11 col-md-offset-1">  
       <table class="table">
         <th> Ticket Type </th>
+        <th> Available </th>
         <th> Unit Price </th>
         <th> Quantity </th>
       
@@ -34,6 +36,7 @@
         <%= hidden_field_tag 'order[ticket_type][]', type.id %>
         <tr>
           <td> <%= type.name %> </td>
+          <td> <%= type.max_quantity %> </td>
           <td> <%= number_to_currency(type.price, unit: 'VND ', precision: 0) %> </td>
           <td> <%= select_tag('order[quantity][]', options_for_select(0..10)) %></td> 
         </tr>

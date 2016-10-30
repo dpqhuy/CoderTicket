@@ -43,4 +43,11 @@ RSpec.describe TicketItem, type: :model do
   		@order = Order.create
   		expect{FactoryGirl.create(:ticket_item, quantity: 8, ticket_type: @ticket_type, order: @order)}.to raise_error ActiveRecord::RecordInvalid
   	end
+
+    scenario "check validate quantity larger than max_quantity of ticket_type" do
+      @ticket_type = FactoryGirl.create(:ticket_type, event: @event, max_quantity: 5)
+      @order = Order.create
+      @item = TicketItem.new(quantity: 8, ticket_type: @ticket_type, order: @order)
+      expect(@item.valid?).to eq false
+    end
 end
