@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   resources :sessions
   resources :users
   resources :venues
+  resources :orders
   get 'login' => 'sessions#new'
   get 'logout' => 'sessions#destroy'
 

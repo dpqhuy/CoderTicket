@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "C:/Sites/CoderTicket/spec/controllers/ticket_types_controller_spec.rb": [
+      "C:/Sites/CoderTicket/spec/controllers/orders_controller_spec.rb": [
         1,
         null,
         1,
@@ -570,6 +570,7 @@
         1,
         1,
         1,
+        1,
         null,
         null,
         null
@@ -645,6 +646,7 @@
         1,
         1,
         null,
+        1,
         1,
         1,
         1,
@@ -731,6 +733,10 @@
         null,
         null
       ],
+      "C:/Sites/CoderTicket/app/helpers/orders_helper.rb": [
+        1,
+        null
+      ],
       "C:/Sites/CoderTicket/app/helpers/ticket_types_helper.rb": [
         1,
         null
@@ -747,22 +753,15 @@
         1,
         null
       ],
-      "C:/Sites/CoderTicket/app/controllers/ticket_types_controller.rb": [
+      "C:/Sites/CoderTicket/app/controllers/orders_controller.rb": [
         1,
         1,
         0,
-        null,
-        null,
-        1,
-        0,
-        0,
         0,
         0,
         null,
         0,
         0,
-        null,
-        null,
         null,
         1,
         1,
@@ -818,6 +817,6 @@
         null
       ]
     },
-    "timestamp": 1477820060
+    "timestamp": 1477824586
   }
 }
