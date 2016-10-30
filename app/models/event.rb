@@ -11,7 +11,7 @@ class Event < ActiveRecord::Base
   end
 
   def self.search(query)
-  	return Event.where("name ILIKE ?", "%#{query}%")
+  	return Event.where("name ILIKE ? AND starts_at >= ? AND published_at IS NOT NULL", "%#{query}%", DateTime.now)
   end
 
   def published?

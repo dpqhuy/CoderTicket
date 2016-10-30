@@ -1,1 +1,1 @@
-$(".events-list").html("<%= escape_javascript(render 'events/list', events: @events) %>")
+$(".events-list").html("<%= escape_javascript(render 'events/list', events: @events, mine: false) %>")
